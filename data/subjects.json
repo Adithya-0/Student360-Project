@@ -1,0 +1,32 @@
+[
+    {
+        "code": "CS101",
+        "name": "Python Programming",
+        "marks": 88,
+        "credits": 4
+    },
+    {
+        "code": "CS102",
+        "name": "Computer Fundamentals",
+        "marks": 82,
+        "credits": 3
+    },
+    {
+        "code": "MA101",
+        "name": "Engineering Mathematics",
+        "marks": 74,
+        "credits": 4
+    },
+    {
+        "code": "PH101",
+        "name": "Engineering Physics",
+        "marks": 68,
+        "credits": 3
+    },
+    {
+        "code": "EC101",
+        "name": "Digital Electronics",
+        "marks": 79,
+        "credits": 3
+    }
+]

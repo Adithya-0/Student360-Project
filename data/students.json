@@ -1,0 +1,16 @@
+[
+    {
+        "id": "ST001",
+        "name": "Rahul Sharma",
+        "year": 1,
+        "branch": "CSE",
+        "college": "ABC Institute of Technology",
+        "email": "rahul@example.com",
+        "skills": [
+            "Python",
+            "Java",
+            "HTML",
+            "CSS"
+        ]
+    }
+]
