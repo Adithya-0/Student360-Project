@@ -1,5 +1,4 @@
 from modules.performance import performance_menu
-from modules.assignments import assignment_menu
 from modules.progress import progress_menu
 from modules.placement import placement_menu
 from modules.reports import overall_report
@@ -37,12 +36,11 @@ def main():
         print("       Student Academic & Career Analytics")
         print("=" * 56)
         print("1. Student Performance Analyzer")
-        print("2. Assignment Performance Analyzer")
-        print("3. Student Progress Tracker")
-        print("4. Placement Readiness Analyzer")
-        print("5. Student Profile")
-        print("6. Generate Overall Report")
-        print("7. Exit")
+        print("2. Student Progress Tracker")
+        print("3. Placement Readiness Analyzer")
+        print("4. Student Profile")
+        print("5. Generate Overall Report")
+        print("6. Exit")
         print("=" * 56)
 
         choice = input("Enter your choice: ").strip()
@@ -50,16 +48,14 @@ def main():
         if choice == "1":
             performance_menu()
         elif choice == "2":
-            assignment_menu()
-        elif choice == "3":
             progress_menu()
-        elif choice == "4":
+        elif choice == "3":
             placement_menu()
-        elif choice == "5":
+        elif choice == "4":
             student_profile()
-        elif choice == "6":
+        elif choice == "5":
             overall_report()
-        elif choice == "7":
+        elif choice == "6":
             print("\nThank you for using Student360.")
             break
         else:

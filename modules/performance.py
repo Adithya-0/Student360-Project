@@ -18,6 +18,7 @@ def get_subjects():
 
 def show_subject_marks():
     subjects = get_subjects()
+    print(subjects)
     print("\n" + "=" * 65)
     print("STUDENT PERFORMANCE")
     print("=" * 65)
@@ -32,14 +33,14 @@ def show_subject_marks():
 
 
 def show_statistics():
-    subjects = get_subjects()
+    subjects = get_subjects() #List of subject classes
     marks = [s.marks for s in subjects]
 
     if not subjects:
         print("No subject data available.")
         return
 
-    highest = max(subjects, key=lambda s: s.marks)
+    highest = max(subjects, key=lambda s: s.marks) # highest represents a specific subject class
     lowest = min(subjects, key=lambda s: s.marks)
 
     print(f"\nAverage Marks : {average(marks):.2f}")

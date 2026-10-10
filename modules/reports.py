@@ -1,12 +1,10 @@
 from modules.performance import calculate_gpa, get_subjects
-from modules.assignments import get_assignments
 from modules.progress import get_semesters
 from modules.placement import load_profile, readiness_score
 
 
 def overall_report():
     subjects = get_subjects()
-    assignments = get_assignments()
     semesters = get_semesters()
     placement = load_profile()
 
@@ -16,16 +14,6 @@ def overall_report():
 
     gpa = calculate_gpa()
     print(f"\nCurrent GPA              : {gpa:.2f}")
-
-    completed = [a for a in assignments if a.is_completed()]
-    if completed:
-        assignment_avg = sum(a.marks for a in completed if a.marks is not None) / max(
-            1, len([a for a in completed if a.marks is not None])
-        )
-    else:
-        assignment_avg = 0
-
-    print(f"Assignment Average       : {assignment_avg:.2f}%")
     print(f"Placement Readiness      : {readiness_score(placement):.1f}%")
 
     if semesters:
